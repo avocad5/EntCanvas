@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>EntCanvas</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <canvas id="mycanvas" width="700" height="700"oncontextmenu='return false'></canvas>
+
+    <div class="colors">
+      <div class="colorbtn" style="background-color:#202020" onclick="changecolor('#202020')"></div><!--검정색-->
+      <div class="colorbtn" style="background-color:#ffffff" onclick="changecolor('#ffffff')"></div><!--하얀색-->
+      <div class="colorbtn" style="background-color:#F91313" onclick="changecolor('#F91313')"></div><!--빨강색-->
+      <div class="colorbtn" style="background-color:#FF4C28" onclick="changecolor('#FF4C28')"></div><!--주황색-->
+      <div class="colorbtn" style="background-color:#FFFF57" onclick="changecolor('#FFFF57')"></div><!--노랑색-->
+      <div class="colorbtn" style="background-color:#00ff7f" onclick="changecolor('#00ff7f')"></div><!--초록색-->
+      <div class="colorbtn" style="background-color:#00bfff" onclick="changecolor('#00bfff')"></div><!--파랑색-->
+      <div class="colorbtn" style="background-color:#2626C1" onclick="changecolor('#2626C1')"></div><!--남색-->
+      <div class="colorbtn" style="background-color:#9932cc" onclick="changecolor('#9932cc')"></div><!--보라색-->
+      <div class="colorbtn" style="background-color:#FF29AA" onclick="changecolor('#FF29AA')"></div><!--분홍색-->
+    </div>
+
+    <input type="range" id="slider" min="0.1" max="99.9" value="50" step="0.05" onchange="changewidth()">
+
+    <div class="save">
+      <button type="button" onclick="fill()">fill</button>
+      <button type="button" onclick="save()">save</button>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
